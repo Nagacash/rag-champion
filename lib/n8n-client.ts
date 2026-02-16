@@ -101,26 +101,16 @@ export const n8nServer = {
       },
     );
 
-    const responseText = await response.text();
-    console.log("[DEBUG] n8n upload response:", response.status, responseText.substring(0, 500));
-    
-    let json: unknown;
-    try {
-      json = JSON.parse(responseText);
-    } catch {
-      json = null;
-    }
-    
+    const json = await response.json().catch(() => null);
     if (json) {
       const parsed = uploadResultSchema.safeParse(json);
       if (parsed.success) {
         return parsed.data;
       }
-      console.log("[DEBUG] Schema validation failed:", parsed.error);
     }
 
     if (!response.ok) {
-      throw new Error(`Upload failed with status ${response.status}: ${responseText}`);
+      throw new Error(`Upload failed with status ${response.status}`);
     }
 
     const totalFiles = formData.getAll("files").length;
