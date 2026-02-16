@@ -4,6 +4,8 @@ import "./globals.css";
 import { ClientProviders, NextIntlProvider } from "@/components/providers";
 import { TopNav } from "@/components/TopNav";
 
+export const dynamic = "force-dynamic";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

@@ -55,7 +55,7 @@ function buildEraseDocUrl(): string {
   return buildServerUrl(raw);
 }
 
-function authHeaders() {
+function authHeaders(): Record<string, string> {
   return N8N_API_KEY ? { Authorization: `Bearer ${N8N_API_KEY}` } : {};
 }
 
@@ -75,11 +75,11 @@ export const n8nServer = {
       buildServerUrl(N8N_CHAT_WEBHOOK_PATH),
       {
         method: "POST",
-        headers: {
+        headers: new Headers({
           "Content-Type": "application/json",
           Accept: "text/event-stream",
           ...authHeaders(),
-        },
+        }),
         body: JSON.stringify(n8nBody),
         signal,
       },

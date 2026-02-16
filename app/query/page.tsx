@@ -1,6 +1,8 @@
 import { ChatSidebar } from "@/components/chat/ChatSidebar";
 import { ChatStream } from "@/components/chat/ChatStream";
 
+export const dynamic = "force-dynamic";
+
 export default function QueryPage() {
   return (
     <main className="relative flex min-h-screen flex-col">

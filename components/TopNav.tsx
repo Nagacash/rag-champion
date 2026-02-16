@@ -2,10 +2,14 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import dynamic from "next/dynamic";
 import { useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
 import { useLocaleStore, type Locale } from "@/lib/locale-store";
+
+const AuthButtons = dynamic(() => import("./AuthButtons").then((mod) => mod.AuthButtons), {
+  ssr: false,
+});
 
 const linkKeys = [
   { href: "/dashboard", key: "dashboard" as const },
@@ -66,24 +70,7 @@ export function TopNav() {
           >
             {otherLocaleLabel}
           </button>
-          <SignedIn>
-            <UserButton
-              appearance={{
-                elements: {
-                  avatarBox:
-                    "h-7 w-7 border border-slate-600/70 shadow-sm shadow-slate-900/80",
-                },
-              }}
-            />
-          </SignedIn>
-          <SignedOut>
-            <Link
-              href="/sign-in"
-              className="rounded-full border border-slate-700/80 bg-slate-900/80 px-3 py-1 text-[0.7rem] text-slate-200 hover:border-cyan-400/70 hover:text-cyan-100"
-            >
-              {t("signIn")}
-            </Link>
-          </SignedOut>
+          <AuthButtons />
         </div>
       </div>
     </header>

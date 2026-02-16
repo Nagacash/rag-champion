@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default function Home() {
   return (
     <main className="relative flex min-h-screen items-center justify-center px-4 py-16 sm:px-8 lg:px-16">

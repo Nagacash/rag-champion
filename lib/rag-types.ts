@@ -21,7 +21,7 @@ export const sourceChunkSchema = z.object({
   page: z.number().int().optional(),
   score: z.number().min(0).max(1),
   snippet: z.string(),
-  metadata: z.record(z.unknown()).optional(),
+  metadata: z.record(z.string(), z.unknown()).optional(),
 });
 
 export type SourceChunk = z.infer<typeof sourceChunkSchema>;
@@ -29,7 +29,7 @@ export type SourceChunk = z.infer<typeof sourceChunkSchema>;
 export const chatRequestSchema = z.object({
   query: z.string().min(1),
   conversationId: z.string().optional(),
-  filters: z.record(z.any()).optional(),
+  filters: z.record(z.string(), z.any()).optional(),
   context: z
     .object({
       userId: z.string().optional(),
@@ -109,7 +109,7 @@ export const retrievalItemSchema = z.object({
   snippet: z.string(),
   collection: z.string().optional(),
   createdAt: z.string().optional(),
-  metadata: z.record(z.unknown()).optional(),
+  metadata: z.record(z.string(), z.unknown()).optional(),
 });
 
 export type RetrievalItem = z.infer<typeof retrievalItemSchema>;

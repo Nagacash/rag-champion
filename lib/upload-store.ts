@@ -28,7 +28,7 @@ export const useUploadStore = create<UploadStoreState>()(
               name: f.name,
               size: f.size,
               uploadedAt: new Date().toISOString(),
-              status: f.success ? "success" : "failed",
+              status: (f.success ? "success" : "failed") as "success" | "failed",
             })),
             ...state.files,
           ].slice(0, 100),
