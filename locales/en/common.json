@@ -1,0 +1,122 @@
+{
+  "app": {
+    "title": "First Family RAG",
+    "description": "Client-facing RAG dashboard powered by n8n and First Family intelligence."
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "upload": "Upload",
+    "signIn": "Sign in"
+  },
+  "home": {
+    "liveStatus": "Live · First Family RAG on n8n",
+    "title": "Your family's private AI that actually remembers.",
+    "subtitle": "Ask anything about your documents, voice notes, and plans. First Family RAG runs on n8n, streams answers token-by-token, and shows exactly which sources it used.",
+    "newQuery": "New intelligent query",
+    "viewDashboard": "View RAG dashboard",
+    "docsIndexed": "Docs indexed",
+    "queriesAnswered": "Queries answered",
+    "avgLatency": "Avg latency",
+    "syncedVia": "Synced via n8n RAG workflow",
+    "streamingAnswers": "Streaming, source-grounded answers",
+    "poweredBy": "Powered by First Family on n8n",
+    "assistantTitle": "First Family Assistant",
+    "assistantSubtitle": "Streaming from n8n RAG",
+    "online": "Online",
+    "tip": "Tip",
+    "tipText": "Ask: \"What's everything we still need to book for this trip?\""
+  },
+  "dashboard": {
+    "overview": "First Family · RAG Overview",
+    "title": "RAG control room",
+    "subtitle": "Live metrics from your n8n-powered retrieval workflow. Monitor indexed documents, query volume, and latency before you dive into a new conversation.",
+    "openChat": "Open chat",
+    "uploadData": "Upload data",
+    "workflowStatus": "n8n workflow: First Family · RAG",
+    "docsIndexed": "Docs indexed",
+    "queriesAnswered": "Queries answered",
+    "avgLatency": "Avg latency",
+    "syncedVia": "Synced via n8n RAG pipeline",
+    "streamingAnswers": "Streaming, source-grounded responses",
+    "fromFirstToken": "From first token to final answer",
+    "howToUse": "How to use First Family RAG",
+    "howToStart": "How do I start a conversation?",
+    "howToStartAnswer": "Go to Chat and ask natural-language questions about your indexed documents. The n8n workflow returns grounded answers from your RAG index.",
+    "howToAdd": "How do I add new documents?",
+    "howToAddAnswer": "Use the Upload view to drag & drop PDFs or CSVs. They are parsed and synced into the RAG pipeline via n8n.",
+    "whatMetrics": "What do the metrics above represent?",
+    "whatMetricsAnswer": "Docs indexed tracks how many documents are in the RAG index, Queries answered shows chat volume, and Avg latency measures how fast answers come back from n8n.",
+    "canErase": "Can I erase the indexed documents?",
+    "canEraseAnswer": "Yes — use the erase indexed docs control on the right to request a reset of the RAG index via n8n.",
+    "tip": "Tip",
+    "tipText": "Use /chat to talk to your RAG knowledge base, /upload to add files or scrape websites with Gemini AI, and this dashboard to monitor your indexed documents."
+  },
+  "chat": {
+    "title": "First Family · Conversation",
+    "subtitle": "RAG chat",
+    "placeholder": "Ask anything about your family docs, plans, and notes...",
+    "newChat": "New chat",
+    "clearHistory": "Clear history",
+    "noConversations": "No conversations yet",
+    "showSources": "Show sources",
+    "hideSources": "Hide sources"
+  },
+  "upload": {
+    "overview": "First Family · Data Upload",
+    "title": "Feed your RAG memory",
+    "subtitle": "Drop PDFs, plans, and notes — or scrape any webpage with Gemini AI.",
+    "fileUpload": "File Upload",
+    "webScrape": "Web Scrape",
+    "dragDrop": "Drag & drop PDFs, docs, or notes",
+    "dragDropSubtitle": "Your files are sent directly to the First Family n8n RAG workflow for indexing.",
+    "browseFiles": "Browse files",
+    "uploading": "Uploading to n8n workflow…",
+    "ingested": "Ingested {processedFiles}/{totalFiles} files via RAG pipeline.",
+    "uploadFailed": "Upload failed. Check the n8n upload webhook URL.",
+    "scrapeTitle": "Scrape a webpage or research anything",
+    "scrapeSubtitle": "Paste a URL to extract content, or ask any question — powered by Gemini AI.",
+    "scrapePlaceholder": "URL or query, e.g. \"nail salons without a website in Berlin\"",
+    "scrapeGo": "Go",
+    "scrapeWorking": "Working…",
+    "scraped": "Scraped {chunks} chunks from {url}",
+    "scrapeFailed": "Scrape failed.",
+    "copy": "Copy",
+    "copied": "Copied",
+    "aiWarning": "⚠ AI-generated summary — always verify facts like addresses, phone numbers, and prices directly on the source website."
+  },
+  "sources": {
+    "title": "Sources",
+    "chunks": "chunks",
+    "score": "score"
+  },
+  "erase": {
+    "dangerZone": "Danger zone",
+    "title": "Erase indexed docs",
+    "subtitle": "Sends a delete request to your n8n workflow to clear the current RAG index. Make sure your erase webhook is wired before using this.",
+    "eraseButton": "Erase indexed docs",
+    "erasing": "Erasing…",
+    "success": "Erase request sent to n8n. The RAG index will be cleared according to your workflow.",
+    "error": "Failed to erase docs. Check the n8n erase webhook and try again."
+  },
+  "uploadHistory": {
+    "title": "Upload history (this browser)",
+    "noUploads": "You haven't uploaded anything from this device yet. Your next uploads will appear here.",
+    "removeFromIndex": "Remove from index",
+    "removing": "Removing…",
+    "failed": "Failed",
+    "synced": "Synced",
+    "size": "KB",
+    "bestWith": "Best with PDF itineraries, plans, and shared docs.",
+    "useChat": "Use the Chat page to ask questions once uploaded."
+  },
+  "sidebar": {
+    "newChat": "New chat",
+    "clearHistory": "Clear history"
+  },
+  "status": {
+    "success": "Success",
+    "error": "Error",
+    "working": "Working"
+  }
+}

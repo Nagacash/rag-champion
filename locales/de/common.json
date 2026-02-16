@@ -1,0 +1,122 @@
+{
+  "app": {
+    "title": "First Family RAG",
+    "description": "Kundenorientierte RAG-Übersicht, betrieben von n8n und First Family Intelligence."
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "chat": "Chat",
+    "upload": "Upload",
+    "signIn": "Anmelden"
+  },
+  "home": {
+    "liveStatus": "Live · First Family RAG auf n8n",
+    "title": "Ihre familiäre KI, die sich tatsächlich an alles erinnert.",
+    "subtitle": "Fragen Sie alles zu Ihren Dokumenten, Sprachnotizen und Plänen. First Family RAG läuft auf n8n, streamt Antworten tokenweise und zeigt genau an, welche Quellen verwendet wurden.",
+    "newQuery": "Neue intelligente Abfrage",
+    "viewDashboard": "RAG-Dashboard anzeigen",
+    "docsIndexed": "Indizierte Dokumente",
+    "queriesAnswered": "Beantwortete Abfragen",
+    "avgLatency": "Durchschnittliche Latenz",
+    "syncedVia": "Synchronisiert über n8n RAG-Workflow",
+    "streamingAnswers": "Streaming, quellengestützte Antworten",
+    "poweredBy": "Betrieben von First Family auf n8n",
+    "assistantTitle": "First Family Assistent",
+    "assistantSubtitle": "Streaming von n8n RAG",
+    "online": "Online",
+    "tip": "Tipp",
+    "tipText": "Fragen Sie: \"Was müssen wir für diese Reise noch alles buchen?\""
+  },
+  "dashboard": {
+    "overview": "First Family · RAG-Übersicht",
+    "title": "RAG-Kontrollraum",
+    "subtitle": "Live-Metriken aus Ihrem von n8n unterstützten Abrufworkflow. Überwachen Sie indizierte Dokumente, Abfragevolumen und Latenz, bevor Sie in eine neue Unterhaltung eintauchen.",
+    "openChat": "Chat öffnen",
+    "uploadData": "Daten hochladen",
+    "workflowStatus": "n8n-Workflow: First Family · RAG",
+    "docsIndexed": "Indizierte Dokumente",
+    "queriesAnswered": "Beantwortete Abfragen",
+    "avgLatency": "Durchschnittliche Latenz",
+    "syncedVia": "Synchronisiert über n8n RAG-Pipeline",
+    "streamingAnswers": "Streaming, quellengestützte Antworten",
+    "fromFirstToken": "Vom ersten Token bis zur endgültigen Antwort",
+    "howToUse": "So verwenden Sie First Family RAG",
+    "howToStart": "Wie starte ich ein Gespräch?",
+    "howToStartAnswer": "Gehen Sie zum Chat und stellen Sie natürlichsprachliche Fragen zu Ihren indizierten Dokumenten. Der n8n-Workflow liefert fundierte Antworten aus Ihrem RAG-Index.",
+    "howToAdd": "Wie füge ich neue Dokumente hinzu?",
+    "howToAddAnswer": "Verwenden Sie die Upload-Ansicht, um PDFs oder CSVs per Drag & Drop hochzuladen. Sie werden geparst und über n8n in die RAG-Pipeline synchronisiert.",
+    "whatMetrics": "Was bedeuten die oben genannten Metriken?",
+    "whatMetricsAnswer": "Indizierte Dokumente zählt, wie viele Dokumente im RAG-Index sind, Beantwortete Abfragen zeigt das Chat-Volumen und Durchschnittliche Latenz misst, wie schnell Antworten von n8n zurückkommen.",
+    "canErase": "Kann ich die indizierten Dokumente löschen?",
+    "canEraseAnswer": "Ja — verwenden Sie die Kontrolle „indizierte Dokumente löschen“ rechts, um eine Zurücksetzung des RAG-Index über n8n anzufordern.",
+    "tip": "Tipp",
+    "tipText": "Verwenden Sie /chat, um mit Ihrer RAG-Wissensbasis zu sprechen, /upload, um Dateien hinzuzufügen oder Webseiten mit Gemini AI zu scrapen, und dieses Dashboard, um Ihre indizierten Dokumente zu überwachen."
+  },
+  "chat": {
+    "title": "First Family · Unterhaltung",
+    "subtitle": "RAG-Chat",
+    "placeholder": "Fragen Sie alles zu Ihren Familienunterlagen, Plänen und Notizen...",
+    "newChat": "Neuer Chat",
+    "clearHistory": "Verlauf löschen",
+    "noConversations": "Noch keine Unterhaltungen",
+    "showSources": "Quellen anzeigen",
+    "hideSources": "Quellen ausblenden"
+  },
+  "upload": {
+    "overview": "First Family · Datenupload",
+    "title": "Füttern Sie Ihr RAG-Gedächtnis",
+    "subtitle": "PDFs, Pläne und Notizen ablegen — oder jede Webseite mit Gemini AI scrapen.",
+    "fileUpload": "Dateiupload",
+    "webScrape": "Web-Scraping",
+    "dragDrop": "PDFs, Dokumente oder Notizen per Drag & Drop ablegen",
+    "dragDropSubtitle": "Ihre Dateien werden direkt an den First Family n8n RAG-Workflow zur Indizierung gesendet.",
+    "browseFiles": "Dateien durchsuchen",
+    "uploading": "Wird in n8n-Workflow hochgeladen…",
+    "ingested": "Ingest {processedFiles}/{totalFiles} Dateien über RAG-Pipeline.",
+    "uploadFailed": "Upload fehlgeschlagen. Überprüfen Sie die n8n Upload-Webhook-URL.",
+    "scrapeTitle": "Webseite scrapen oder etwas recherchieren",
+    "scrapeSubtitle": "URL einfügen, um Inhalte zu extrahieren, oder eine Frage stellen — betrieben von Gemini AI.",
+    "scrapePlaceholder": "URL oder Abfrage, z.B. \"Nagelstudios ohne Website in Berlin\"",
+    "scrapeGo": "Los",
+    "scrapeWorking": "Wird bearbeitet…",
+    "scraped": "Gescraped {chunks} Chunks von {url}",
+    "scrapeFailed": "Scraping fehlgeschlagen.",
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "aiWarning": "⚠ KI-generierte Zusammenfassung — überprüfen Sie Fakten wie Adressen, Telefonnummern und Preise immer direkt auf der Quellwebsite."
+  },
+  "sources": {
+    "title": "Quellen",
+    "chunks": "Chunks",
+    "score": "Bewertung"
+  },
+  "erase": {
+    "dangerZone": "Gefahrenzone",
+    "title": "Indizierte Dokumente löschen",
+    "subtitle": "Sendet eine Löschanfrage an Ihren n8n-Workflow, um den aktuellen RAG-Index zu löschen. Stellen Sie sicher, dass Ihr Löschen-Webhook vor der Nutzung konfiguriert ist.",
+    "eraseButton": "Indizierte Dokumente löschen",
+    "erasing": "Wird gelöscht…",
+    "success": "Löschanfrage an n8n gesendet. Der RAG-Index wird gemäß Ihrem Workflow gelöscht.",
+    "error": "Löschen der Dokumente fehlgeschlagen. Überprüfen Sie den n8n Löschen-Webhook und versuchen Sie es erneut."
+  },
+  "uploadHistory": {
+    "title": "Upload-Verlauf (dieser Browser)",
+    "noUploads": "Sie haben noch nichts von diesem Gerät hochgeladen. Ihre nächsten Uploads werden hier angezeigt.",
+    "removeFromIndex": "Aus Index entfernen",
+    "removing": "Wird entfernt…",
+    "failed": "Fehlgeschlagen",
+    "synced": "Synchronisiert",
+    "size": "KB",
+    "bestWith": "Am besten mit PDF-Reiseplänen, Plänen und gemeinsamen Dokumenten.",
+    "useChat": "Verwenden Sie die Chat-Seite, um Fragen zu stellen, sobald hochgeladen."
+  },
+  "sidebar": {
+    "newChat": "Neuer Chat",
+    "clearHistory": "Verlauf löschen"
+  },
+  "status": {
+    "success": "Erfolg",
+    "error": "Fehler",
+    "working": "Wird bearbeitet"
+  }
+}
