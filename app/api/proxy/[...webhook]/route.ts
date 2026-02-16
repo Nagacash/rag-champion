@@ -144,9 +144,10 @@ export async function POST(
         },
       });
     } catch (error) {
-      console.error("Upload via n8n failed", error);
+      console.error("[DEBUG] Upload via n8n failed:", error);
+      const errorMessage = error instanceof Error ? error.message : "Unknown error";
       return NextResponse.json(
-        { error: "Upload failed via n8n webhook" },
+        { error: "Upload failed via n8n webhook", details: errorMessage },
         {
           status: 502,
           headers: {
